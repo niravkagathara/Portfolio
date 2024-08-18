@@ -1,40 +1,86 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCards";
+import Particle from "../Particle";
+import healthify from "../../Assets/Projects/healthify.png";
+import readews from "../../Assets/Projects/readews.png";
+import docto from "../../Assets/Projects/1.png";
+import { FaLinkedinIn } from "react-icons/fa";
 
-function ProjectCards(props) {
+
+function Projects() {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
+    <Container fluid className="project-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          My Recent <strong className="purple">Works </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are a few projects I've worked on recently.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={docto}
+              isBlog={false}
+              title="Doctor-Appointment Management"
+              description="🚀 Excited to Showcase My Doctor Appointment Management System! 🚀
+I’m thrilled to introduce my latest project, a Doctor Appointment Management System designed to enhance hospital operations. Built with PHP and SQL, this system features a responsive design and offers comprehensive functionalities for patients, doctors, and admins.
+- Responsive Design: Optimized for a seamless experience across all devices.
+How to use site all details show in linkdin post description in 
+"
+ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_webdevelopment-php-sql-activity-7230564598725132288-BlJ8?utm_source=share&utm_medium=member_desktop"
+              demoLink="http://doctor-app.infinityfreeapp.com/DAM"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={readews}
+              isBlog={false}
+              title="E-commerce website         "
+              description="MERN Stack E-commerce website Features & Technologies:
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+              - Frontend: React, Redux Toolkit, React Router, MUI, Styled Components, Bootstrap
+              - Backend: Node.js, Express, MongoDB, Mongoose
+              - UI/UX: Emotion, Formik, React Icons, React Feather, React Multi Carousel, React Modal, React Toastify
+              - Security & Authentication: Helmet, JSON Web Token, Validator
+              - File Handling: Multer
+              - Environment Configuration: Dotenv
+              - Logging & Debugging: Morgan
+              - Testing: Jest, Testing Library
+              - Other Tools: Web Vitals, React Pro Sidebar, CORS
+              - cookies manage 
+              "
+              ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_mern-ecommerce-react-activity-7206285241118842880-ZVj8?utm_source=share&utm_medium=member_desktop"
+              demoLink="https://ecommerce-nk.vercel.app/"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={healthify}
+              isBlog={false}
+              title="Olx Clone App"
+              description="the first Flutter OLX clone app! 🚀📱 Successfully developed the basic UI, showcasing my skills in mobile app development. Looking forward to refining and expanding its features.
+              -4 screens
+              1 splash screen
+              2 home screen
+              3 detail screen
+              4 profile page 
+              create simple UI
+              using list view, grid view, etc.. widget "
+              ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_flutter-appdevelopment-olxclone-activity-7159536736727973888-il1G?utm_source=share&utm_medium=member_desktop"
+              git="https://github.com/niravkagathara/olx_clone_flutter.git"
+            />
+          </Col>
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+         
+
+        </Row>
+      </Container>
+    </Container>
   );
 }
-export default ProjectCards;
+
+export default Projects;
