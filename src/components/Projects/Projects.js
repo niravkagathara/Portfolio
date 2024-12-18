@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import healthify from "../../Assets/Projects/healthify.png";
 import readews from "../../Assets/Projects/readews.png";
+import games from "../../Assets/Projects/dugames.png";
+
 import docto from "../../Assets/Projects/1.png";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -74,7 +76,28 @@ ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_webdevelopment-
               git="https://github.com/niravkagathara/olx_clone_flutter.git"
             />
           </Col>
-
+ <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={games}
+              isBlog={false}
+              title="DU Games"
+              description="🚀 Introducing DU Games – Darshan University 🎮✨
+I am excited to share DU Games, an interactive online gaming platform developed by students of Darshan University! This project blends web development and game development, offering a variety of engaging games and valuable features for users.
+🔑 Key Highlights:
+🎲 Games Library: Play games like 2048, Car Chase, Flappy Bird, and more, designed for users of all ages.
+📝 Feedback System: Share your thoughts to help us grow and improve.
+👩‍💻 Developer Profiles: Meet the creators behind the platform with links to their professional profiles.
+🔧 Admin Panel: Seamless management of games and user feedback.
+👤 User Profiles: Personalized dashboards for registered users.
+🛠 Tech Stack:
+Frontend: HTML, CSS, JavaScript, Bootstrap
+Backend: PHP & MySQL
+This project was made possible with the guidance and mentorship of Prof. Vijay Shekhat —thank you for your support and insights! 🙏
+"
+              ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_flutter-appdevelopment-olxclone-activity-7159536736727973888-il1G?utm_source=share&utm_medium=member_desktop"
+              git="https://github.com/niravkagathara/DU_game.git"
+            />
+          </Col>
          
 
         </Row>
