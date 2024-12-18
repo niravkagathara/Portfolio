@@ -94,7 +94,7 @@ Frontend: HTML, CSS, JavaScript, Bootstrap
 Backend: PHP & MySQL
 This project was made possible with the guidance and mentorship of Prof. Vijay Shekhat —thank you for your support and insights! 🙏
 "
-              ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_flutter-appdevelopment-olxclone-activity-7159536736727973888-il1G?utm_source=share&utm_medium=member_desktop"
+              ghLink="https://www.linkedin.com/posts/nirav-kagathara-80978124b_darshanuniversity-webdevelopment-gamedevelopment-activity-7275125983735676929-Pcjs?utm_source=share&utm_medium=member_desktop"
               git="https://github.com/niravkagathara/DU_game.git"
             />
           </Col>
