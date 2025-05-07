@@ -22,7 +22,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Javascript, Java, Python, PHP and Flutter. </b>
+                <b className="purple">  MERN Stack, PHP, Flutter, Python, Javascript and Java,. </b>
               </i>
               <br />
               <br />
