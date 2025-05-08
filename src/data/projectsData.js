@@ -438,6 +438,33 @@ It's been an amazing journey of learning, collaboration, and growth. I'm excited
         demoLink: null,
         githubLink: "https://github.com/niravkagathara/olx_clone_flutter.git"
       },
+      {
+        id: 7,
+        title: "Portfolio",
+        images: [
+          require("../Assets/Projects/p1.png"),
+          require("../Assets/Projects/p2.png"),
+          require("../Assets/Projects/p3.png"),
+          require("../Assets/Projects/p4.png"),
+          require("../Assets/Projects/p5.png"),
+          require("../Assets/Projects/p6.png"),
+          require("../Assets/Projects/p7.png"),
+          require("../Assets/Projects/p8.png"),
+
+        ],
+        description: `
+Explore a comprehensive showcase of my work at niravkagathara.vercel.app. This responsive portfolio highlights all of my projects in detail — including project descriptions, feature highlights, images, blog-style posts, and source code. Each project section is thoughtfully designed to provide complete insight into the development process, technologies used, and real-world application. Additionally, visitors can easily download my updated resume directly from the site. The website is fully responsive, ensuring a seamless experience across all devices.`,
+        features: [
+            "All project showcase",
+            "project Description ,Images,Featuers, Posts ,Codes all details about my Porject",
+             "Resume Download",
+            "Responsive",
+        ],
+        technologies: ["React js", "React Bootstrap", "Java Script"],
+        linkedinLink: "https://www.linkedin.com/in/nirav-kagathara-80978124b/",
+        demoLink: "https://niravkagathara.vercel.app/",
+        githubLink: "https://github.com/niravkagathara/Portfolio.git"
+      },
       
   ];
   
