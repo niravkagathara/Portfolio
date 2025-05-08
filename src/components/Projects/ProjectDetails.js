@@ -138,24 +138,69 @@ function ProjectDetails() {
                         </ul>
 
                         <div className="text-center mt-4">
-                            <h4 className="text-white mb-3">Technologies Used</h4>
-                            <div className="d-flex flex-wrap justify-content-center gap-2">
-                                {project.technologies.map((tech, index) => (
-                                    <Badge
-                                        key={index}
-                                        bg="primary"
-                                        className="px-3 py-2"
-                                        style={{
-                                            color: 'white',
-                                            fontSize: '0.9rem',
-                                            borderRadius: '20px'
-                                        }}
-                                    >
-                                        {tech}
-                                    </Badge>
-                                ))}
-                            </div>
-                        </div>
+    <h4 className="text-white mb-3">Technologies Used</h4>
+    <div className="d-flex flex-wrap justify-content-center gap-2">
+        {project.technologies.map((tech, index) => {
+            // Normalize the technology name for comparison
+            const techLower = tech.toLowerCase();
+            
+            // Determine badge class based on technology
+            let bgClass = "bg-primary"; // default
+            let textClass = "text-white"; // default
+            
+            if (techLower.includes('php')) {
+                bgClass = "bg-dark"; // black for PHP
+            } else if (techLower.includes('node') || techLower.includes('node.js') || techLower.includes('nodejs')) {
+                bgClass = "bg-success"; // green for Node.js
+            } else if (techLower.includes('express')) {
+                bgClass = "bg-warning"; // yellow for Express
+                textClass = "text-dark"; // black text
+            } else if (techLower.includes('react')) {
+                bgClass = "bg-info"; // light blue for React
+                textClass = "text-dark"; // black text
+            } else if (techLower.includes('dart')) {
+                bgClass = "bg-primary"; // blue for Dart
+            } else if (techLower.includes('flutter')) {
+                bgClass = "bg-primary"; // blue for Flutter
+            } else if (techLower.includes('mysql') || techLower.includes('sql')) {
+                bgClass = "bg-info"; // blue for MySQL/SQL
+            } else if (techLower.includes('mongodb')) {
+                bgClass = "bg-success"; // green for MongoDB
+            } else if (techLower.includes('bootstrap')) {
+                bgClass = "bg-purple"; // purple for Bootstrap
+            } else if (techLower.includes('javascript')) {
+                bgClass = "bg-warning"; // yellow for JavaScript
+                textClass = "text-dark"; // black text
+            } else if (techLower.includes('html')) {
+                bgClass = "bg-danger"; // red for HTML
+            } else if (techLower.includes('css')) {
+                bgClass = "bg-primary"; // blue for CSS
+            } else if (techLower.includes('c/c++')) {
+                bgClass = "bg-dark"; // dark for C/C++
+            } else if (techLower.includes('iot') || techLower.includes('esp8266') || techLower.includes('rc522-rfid') || techLower.includes('mqtt')) {
+                bgClass = "bg-secondary"; // gray for IoT-related
+            } else if (techLower.includes('redux')) {
+                bgClass = "bg-purple"; // purple for Redux
+            } else if (techLower.includes('shared preference')) {
+                bgClass = "bg-success"; // green for Shared Preference
+            }
+
+            return (
+                <Badge
+                    key={index}
+                    className={`px-3 py-2 ${bgClass} ${textClass}`}
+                    style={{
+                        fontSize: '0.9rem',
+                        borderRadius: '20px',
+                        fontWeight: '500'
+                    }}
+                >
+                    {tech}
+                </Badge>
+            );
+        })}
+    </div>
+</div>
                     </Col>
                 </Row>
                 </Card.Body>
