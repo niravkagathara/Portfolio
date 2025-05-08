@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">NIRAV KAGATHARA </span>
             from <span className="purple"> Rajkot, India.</span>
-            <br /> I am a 3rd year student pursuing Bachelor of Technology (B.Tech)
+            <br /> I am a 4th year student pursuing Bachelor of Technology (B.Tech)
             in Computer Science and Engineering at Darshan University.
             <br />
             {/* Additionally, I am currently employed as a software developer at
