@@ -1,6 +1,6 @@
 // src/data/projectsData.js
-import a from "../Assets/Projects/1.png";
-import b from "../Assets/Projects/readews.png";
+// import a from "../Assets/Projects/1.png";
+// import b from "../Assets/Projects/readews.png";
 const projectsData = [
    
       {
